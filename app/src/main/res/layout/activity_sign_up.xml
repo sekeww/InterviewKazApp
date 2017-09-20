@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main_background"
+    android:gravity="center_horizontal"
+    android:id="@+id/linearLayout"
+    tools:context="com.shapp.www.interviewkazapp.SignUpActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="#15ffffff"
+        android:text="#ABC_hack"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="40dp"
+        android:layout_marginBottom="15dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="N A I M I    Q U E S T I O N S"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="24dp"
+        android:layout_marginBottom="15dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#33ffffff"
+        android:hint="username"
+        android:paddingLeft="10dp"
+        android:textColor="#E3E3E3"
+        android:textColorHint="#E3E3E3"
+        android:id="@+id/usernameEditText"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textColor="#E3E3E3"
+        android:layout_marginTop="15dp"
+        android:background="#33ffffff"
+        android:hint="password"
+        android:paddingLeft="10dp"
+        android:textColorHint="#E3E3E3"
+        android:id="@+id/passwordEditText"
+        android:inputType="textPassword"
+        />
+
+    <EditText
+        android:id="@+id/iinEditText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="#33ffffff"
+        android:hint="IIN"
+        android:textColor="#E3E3E3"
+        android:inputType="numberPassword"
+        android:paddingLeft="10dp"
+        android:textColorHint="#E3E3E3"
+        />
+
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_background"
+        android:text="Sign Up"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#33ffffff"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have account?"
+            android:textColor="#E3E3E3"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/loginButton"
+            android:background="@android:color/transparent"
+            android:text="Log in."
+            android:textAllCaps="false"
+            android:textColor="#E3E3E3"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

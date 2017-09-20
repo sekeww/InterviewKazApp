@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:timer="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+             android:background="@drawable/main_background"
+    tools:context="com.example.android.camera2video.QuestionsActivity">
+    <Button
+        android:id="@+id/camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Camera"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:id="@+id/title"
+        android:background="#15ffffff"
+        android:textColor="@android:color/white"
+
+        android:text="Questions"
+        android:layout_gravity="top|center"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/questions"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textColor="#E3E3E3"
+            android:textAlignment="textStart"
+            android:text="1. What is your name?"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:textAlignment="textStart"
+            android:textColor="#E3E3E3"
+            android:layout_height="wrap_content"
+            android:text="2. How old are you?"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textAlignment="textStart"
+            android:layout_height="wrap_content"
+            android:textColor="#E3E3E3"
+            android:layout_margin="5dp"
+            android:text="3. Are you a good person?"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:textColor="#E3E3E3"
+            android:layout_margin="5dp"
+            android:text="4. What have you done?"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#E3E3E3"
+            android:textAlignment="textStart"
+            android:text="5. Are you cool?"
+            android:layout_margin="5dp"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:textColor="#E3E3E3"
+            android:text="6. How are you?"
+            android:layout_margin="5dp"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <io.github.krtkush.lineartimer.LinearTimerView
+        android:id="@+id/linearTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="50dp"
+        timer:radius="30dp"
+        timer:strokeWidth="3dp" />
+
+
+</FrameLayout>
